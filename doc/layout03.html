@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 레이아웃 03</title>
+    <style>
+
+        /* reset */
+        *{margin:0;padding:0;box-sizing:border-box;font-size:inherit;font-weight:normal;color:inherit;}
+        ul,ol {list-style:none;}
+        a {text-decoration:none;}
+        img {vertical-align: middle;}
+        body {line-height:1;}
+
+    /* basic float layout*/
+
+    h1 {font-size:30px;text-align:center;margin-bottom: 100px;}
+
+
+    .sc03 {
+        padding: 100px 0;
+        text-align: center;
+        background-color: #f2f2f2;
+    }
+
+    .sc03 .container {
+        margin: 0 auto;
+        width: 1200px;
+    }
+    
+    .sc03 figure {
+        float: left;
+        width: 20%;
+        padding:0 15px;
+    }
+    .sc03 .container::after {
+        content:"";
+        display:block;
+        clear:both;
+    }
+    .sc03 figure img {
+        width:100%;
+        margin-bottom: 20px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <h1>기본 레이아웃 03</h1>
+
+    <section class="sc03">
+
+        <div class="container">
+            <figure>
+                <img src="../img/menu_n01.jpg" alt="">
+            </figure>
+            <figure>
+                <img src="../img/menu_n02.jpg" alt="">
+            </figure>
+            <figure>
+                <img src="../img/menu_n03.jpg" alt="">
+            </figure>
+            <figure>
+                <img src="../img/menu_n04.jpg" alt="">
+            </figure>
+            <figure>
+                <img src="../img/menu_n01.jpg" alt="">
+            </figure>
+        </div>
+
+    </section>
+    
+</body>
+</html>
