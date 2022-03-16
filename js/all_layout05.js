@@ -16,11 +16,12 @@ function tabMenu() {
 }
 
 
-    
+
 $('.tabLink li').on('click', tabMenu);
 
-$('.xi-close').on('click', function(){
-    $('.headerWrap').slideToggle();
+$('.topBannerToggle .inner').on('click', function(){
+    $(this).toggleClass('active');
+    $('.headerWrap .container').slideToggle();
 })
 ///////////////////////////////
 
