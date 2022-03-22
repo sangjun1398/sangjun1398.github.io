@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>티바두마리치킨</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/tiba.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+</head>
+
+
+<body>
+    <div class="Wrap">
+
+        <!-- { topBanner : oh 2022.03.17 최종수정 -->
+        <div class="topBanner">
+            <div class="container">
+                <h2>티바는 연쇄 할인마♥</h2>
+                <p>
+                배달의 민족X요기요 어쩔만두세트 1~6종 4,000원 할인 !!
+                    <a href="#!">more</a>
+                </p>
+                <i class="xi-close"></i>
+            </div>
+        </div>
+
+
+        <!-- { header : oh 2022.03.17 최종수정 -->
+        <header class="headerWrap">
+            <div class="container">
+                <h1>
+                    <a href="/">
+                        <img src="./images/tiba/logo.png" alt="tibalogo">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#!">브랜드소개</a></li>
+                        <li><a href="#!">창업정보</a></li>
+                        <li><a href="#!">메뉴</a></li>
+                        <li><a href="#!">이벤트</a></li>
+                        <li><a href="#!">매장찾기</a></li>
+                        <li><a href="#!">고객의 소리</a></li>
+                    </ul>
+                </nav>
+                <div class="searchForm">
+                    <form name="searchForm" id="searchForm" action="">
+                        <input type="search" name="searchvalue" id="searchvalue" placeholder="검색어를 입력해주세요." required>
+                        <button><i class="xi-search"></i></button>
+                    </form>
+                    <script>
+                        const formSumit = () => {
+                            const searchVal = document.searchForm.searchvalue.value;
+                            if (searchVal.length < 5) {
+                                alert('검색어가 너무 짧습니다.');
+                                return
+                            }
+                            alert(searchVal)
+                        }
+                    </script>
+                </div>
+            </div>
+        </header>
+
+
+
+        <main>
+            <!-- { mainVisual : oh 2022.03.17 최종수정 -->
+            <section class="mainVisual">
+                <div class="visualSlide">
+                    <figure class="itm01">
+                        <i class="xi-heart"></i>
+                    </figure>
+
+                    <figure class="itm02">
+                        <i class="xi-heart"></i>
+                    </figure>
+
+                    <figure class="itm03">
+                        <i class="xi-heart"></i>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="mainProduct">
+                <h2>다양한 조합으로 맛있게 !</h2>
+                <p>티바 <span>두마리치킨</span> 메뉴</p>
+                <div class="container">
+                    <figure>
+                        <div class="inner">
+                            <img src="./images/tiba/menu01.png" alt="">
+                        </div>
+                        <strong>꿀간장치킨</strong>
+                        <p>바삭하게 한 입! 달콤하게 또 한 입 !</p>
+                        <a href="">주문하기</a>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="./images/tiba/menu02.png" alt="">
+                        </div>
+                        <strong>마늘빵치킨</strong>
+                        <p>빠삭한 치킨과 마늘빵을 갈릭 크림치즈 소스에 퐁당 !</p>
+                        <a href="">주문하기</a>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="./images/tiba/menu03.png" alt="">
+                        </div>
+                        <strong>알싸한마늘간장</strong>
+                        <p>생마늘과 특제 간장소스의 맛이 일품 !</p>
+                        <a href="">주문하기</a>
+                        <div class="label">
+                            <span>HIT !</span>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="eventBanner">
+                <h2>경남 창녕에서 온 찐~한 마늘</h2>
+                <p>마늘만 21년 연구</p>
+                <a href="#!">more <i class="xi-arrow-right"></i></a>
+            </section>
+
+            <section class="evenetProduct">
+                <div class="container">
+                    <div class="left">
+                        <div class="eProductSlide">
+                            <figure><img src="./images/tiba/side01.png" alt="우동떡볶이"></figure>
+                            <figure><img src="./images/tiba/side02.png" alt="똥집튀김"></figure>
+                            <figure><img src="./images/tiba/side03.png" alt="버터플라이새우"></figure>
+                            <figure><img src="./images/tiba/side04.png" alt="찰도그"></figure>
+                            <figure><img src="./images/tiba/side05.png" alt="쫀득치즈볼"></figure>
+                            <figure><img src="./images/tiba/side06.png" alt="치즈스틱"></figure>
+                            <figure><img src="./images/tiba/side07.png" alt="황금감자"></figure>
+
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="txtinner">
+                            <h3>치킨과 함께 먹으면 더욱 맛있는</h3>
+                            <p>사이드 메뉴</p>
+                            <i class="xi-pause"></i> <i class="xi-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="allProduct">
+                <h2>딥핑 소스</h2>
+                <p>다양한 소스와 함께 즐기세요</p>
+                <div class="container">
+                    <div class="aproductSlide">
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/tiba/sauce01.png" alt="">
+                            </div>
+                            <strong>치즈시즈닝</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/tiba/sauce02.png" alt="">
+                            </div>
+                            <strong>고추마늘간장 소스</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/tiba/sauce03.png" alt="">
+                            </div>
+                            <strong>알싸한마늘간장 소스</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/tiba/sauce04.png" alt="">
+                            </div>
+                            <strong>양념소스</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/tiba/sauce05.png" alt="">
+                            </div>
+                            <strong>땡초갈릭소스</strong>
+                        </figure>
+
+                    </div>
+                    <div class="arrows">
+                        <i class="xi-arrow-right"></i>
+                        <i class="xi-arrow-left"></i>
+                    </div>
+                </div>
+
+            </section>
+            <section class="movieBg">
+                <div class="container">
+                    <h3>티바두마리치킨X박군</h3>
+                    <p>예비창업자 여러분, 티바두마리치킨 앞으로 헤쳐 모엿!</p>
+                    <div class="btn">
+                        <i class="xi-pause"></i>
+                        <i class="xi-play"></i>
+                    </div>
+                </div>
+                <div id="bgndVideo" class="player"></div>
+
+
+            </section>
+            <section class="customerArea">
+                <div class="container">
+                    <div>
+                        <ul class="tabMenu">
+                            <li class="oo"><a href="#!"> News &amp; notive</a></li>
+                            <li><a href="#!">Event</a></li>
+                            <li><a href="#!">issue &amp; doc</a></li>
+                        </ul>
+                        <div class="tabContent">
+                            <div class="oo">
+                                <ul>
+                                    <li><a href="#!"><strong>유천점·연일유강점 등 신규 오픈 
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong>영남대점·삼척강원대점 등 5개점 새로이 문 연다
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong>2022년 창업특전 이벤트 진행
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong>2월 거제하청점·퇴계점 등 5개점 오픈
+                                            </strong><span>2022.03.21</span></a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="#!"><strong>3월 배달앱 할인 프로모션 
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong>티바두마리치킨 서정점, 보육원 후원 주문에 할인 제공
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong>2월에도 배달의민족, 요기요에서 할인 프로모션 진행 이어가
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong>새해 창업특전 이벤트 진행 "소자본 창업 지원"
+                                            </strong><span>2022.03.21</span></a></li>
+ 
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="#!"><strong>취향저격 이색메뉴 … 3월의 신메뉴 '어쩔만두세트' 인기
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong>티바두마리치킨, 2022년에도 가맹문의 '활발'
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong>소상공인진흥공단 선정 ‘3년연속 우수 프랜차이즈’ 지정
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong>사이드신메뉴 '감자치즈볼' 선보여
+                                            </strong><span>2022.03.21</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/tiba/tapMenu01.png" alt="">
+                        <a href="#!" class="button">
+                            view
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footerWrap">
+            <div class="top">
+                <div class="container">
+                    <dl class="left">
+                        <dt><a href="#!">이용약관</a></dd>
+                        <dd><a href="#!">문의하기</a></dd>
+                        <dd><a href="#!">개인정보 취급방침</a></dd>
+                        <dd><a href="#!">방문 예약하기</a></dd>
+                        <dd><a href="#!">사이즈 가이드</a></dd>
+                        <dd><a href="#!">그라프 하우스 소개</a></dd>
+                    </dl>
+                    <div class="sns">
+                        <a href="#!" target="_blank"><i class="xi-kakaotalk"></i></a>
+                        <a href="#!" target="_blank"><i class="xi-instagram"></i></a>
+                        <a href="#!" target="_blank"><i class="xi-facebook"></i></a>
+                        <a href="#!" target="_blank"><i class="xi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="container">
+                    <address>
+                        전화번호 : 235223423432 그린컴퓨터아카데미
+                    </address>
+                    <div class="link">
+                        <select id="link">
+                            <option value="">FAMILY LINK</option>
+                            <option value="http://naver.com">naver</option>
+                            <option value="http://daum.net">daum</option>
+                            <option value="http://google.com">google</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+<div class="popup01">
+    <img src="./images/tiba/popup01.png" alt="">
+    <button>
+        close
+    </button>
+</div>
+
+
+
+</body>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery.mb.YTPlayer.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/tiba.js"></script>
+
+</html>
