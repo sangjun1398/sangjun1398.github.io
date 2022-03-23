@@ -92,7 +92,39 @@ $(function () {
         $('.tabContent>div').eq($(this).index()).addClass('oo').siblings().removeClass('oo');
     });
 
+    // link
+
+    $('#link').on('change', function(){
+        let linkSite = $(this).val();
+        if (!linkSite) return;
+        window.open(linkSite);
+    });
 
 
-    //////////console.log('play')////////////////////////
+    $('.popup01 button').on('click', function() {
+        $(this).parent().hide();
+    })
+
+    $('.toTop').on('click', function(){
+        $('html, body').animate({
+            scrollTop:0
+        },1000)
+        return false;
+    })
+
+    $(window).on('scroll', function() {
+        let sct = $(window).scrollTop();
+        console.log(sct);
+        if (sct > 500){
+            $('.toTop').fadeIn(1000);
+        } else {
+            $('.toTop').fadeOut(1000);
+        }
+    })
+
+
+
+
+
+    //////////////////////////////////
 })
